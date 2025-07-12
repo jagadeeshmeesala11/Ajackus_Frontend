@@ -18,7 +18,7 @@ if (editData) {
 }
 
 cancelBtn.addEventListener('click', () => {
-  window.location.href = 'index.html';
+  window.location.href = 'DashBoard.html';
 });
 
 addBtn.addEventListener('click', (e) => {
@@ -50,5 +50,5 @@ addBtn.addEventListener('click', (e) => {
   departmentSelect.value = '';
   roleSelect.value = '';
 
-  window.location.href = 'index.html';
+  window.location.href = 'DashBoard.html';
 });
