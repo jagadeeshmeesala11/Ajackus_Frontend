@@ -25,9 +25,9 @@ sortComponent.addEventListener('change', () => {
     } else if (selectedOption === 'email') {
       return a.email.toLowerCase().localeCompare(b.email.toLowerCase());
     } else if (selectedOption === 'department') {
-      return a.department.toLowerCase().localeCompare(b.department.toLowerCase());
+      return a.department.toLowerCase().localeCompare(b.department);
     } else if (selectedOption === 'role') {
-      return a.role.toLowerCase().localeCompare(b.role.toLowerCase());
+      return a.role.localeCompare(b.role);
     }
   });
   renderDashboard(currentEmployees);

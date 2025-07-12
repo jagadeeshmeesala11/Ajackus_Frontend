@@ -27,7 +27,7 @@ sortComponent.addEventListener('change', () => {
     } else if (selectedOption === 'department') {
       return a.department.toLowerCase().localeCompare(b.department.toLowerCase());
     } else if (selectedOption === 'role') {
-      return a.role.toLowerCase().localeCompare(b.role.toLowerCase());
+      return a.role.toLowerCase().localeCompare(b.role);
     }
   });
   renderDashboard(currentEmployees);

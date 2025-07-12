@@ -23,11 +23,11 @@ sortComponent.addEventListener('change', () => {
     if (selectedOption === 'name') {
       return a.firstName.toLowerCase().localeCompare(b.firstName.toLowerCase());
     } else if (selectedOption === 'email') {
-      return a.email.toLowerCase().localeCompare(b.email.toLowerCase());
+      return a.email..localeCompare(b.email);
     } else if (selectedOption === 'department') {
-      return a.department.toLowerCase().localeCompare(b.department.toLowerCase());
+      return a.department.localeCompare(b.department);
     } else if (selectedOption === 'role') {
-      return a.role.toLowerCase().localeCompare(b.role.toLowerCase());
+      return a.role.localeCompare(b.role);
     }
   });
   renderDashboard(currentEmployees);
