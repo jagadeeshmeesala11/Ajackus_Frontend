@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/dashboard.css">
+    <title>DashBoard</title>
+
+</head>
+<body>
+    <div class="main-container">
+    <div >
+        <nav class="nav-bar" id="nav">
+            <h1 class="nav-heading">Employee Directory</h1>
+            <input type="search" name="search" id="search" placeholder="Search  by name or email">
+            <button id="filter-btn">Filter</button>
+        </nav>
+        <div id="addFormView">
+           <div class="sort-container">
+             <p>Sort</p>
+            <select title="select" id="sort">
+                <option value="name">Name</option>
+                <option value="email">Email</option>
+                <option value="department">Department</option>
+                <option value="role">Role</option>
+            </select>
+           
+                <p>Show</p>
+                <select id="show">
+                    <option value="5" selected>5</option>
+                    <option value="10">10</option>
+                    <option value="15">15</option>
+                    <option value="20">20</option>
+                </select>
+            </div>
+            <div>
+                <a id="addEmploye-btn" href="AddEmploye.html">Add Employee</a>
+            </div>
+        </div>
+        <div id="dashboardView">
+
+        </div>
+        <div id="footer">
+            <p class="footer-paragraph">@ 2025 Employee Directory App. All rights reserved</p>
+        </div>
+        
+    </div>
+    <div class="filter" id="filter-container">
+        <h1>Filter Employees</h1>
+        <div>
+            <form class="filter-form">
+                <div>
+                    <label for="firstName">First Name</label> 
+                    <input type="text" name="firstName" id="firstName">
+                </div>
+                <div>
+                    <label for="Department">Department</label> 
+                  
+                    <input type="text" name="Department" id="Department">
+                </div>
+                <div>
+                    <label for="role">Role</label> 
+                    <input type="text" name="role" id="role">
+                </div>
+            </form>
+            <div class="filter-button-container">
+                <button class="filter-btn" id="apply-btn">Apply</button>
+                <button class="filter-btn" id="reset-btn">Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="../static/js/dashBoard.js"></script>
+</body>
+</html>

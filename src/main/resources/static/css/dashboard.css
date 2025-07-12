@@ -1,0 +1,155 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav-bar{
+    display: flex;
+    background-color:black;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    width: 100vw;
+}
+
+.nav-heading{
+    color:white;   
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+}
+
+#search{
+width: 40vw;
+height: 5vh;
+padding: 5px;
+border: 0px;
+border-radius: 3px;
+}
+
+#filter-btn{
+    width: 5vw;
+    height: 3vh;
+}
+
+#addFormView{
+    background-color:gray;
+    height: 10vh;
+    width: 100vw;
+    background-color:transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.sort-container{
+    display: flex;
+    gap: 10px;
+    margin-left: 20px;
+}
+
+#addEmploye-btn{
+    background-color:rgb(33, 187, 33);
+    color:white;
+    width: 15vw;
+    height: 30px;
+    border:0px;
+    border-radius: 3px;
+    margin-right: 40px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+#dashboardView{
+    background-color:rgba(224, 215, 215, 0.472);
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.width-100{
+    width: 80vw !important;
+}
+
+#footer{
+    background-color: black;
+    height: 10vh;
+    width: 100vw;
+    color:white;
+    justify-content: start;
+    align-items: center;
+    display: flex;
+    
+}
+
+.card-button-container{
+    display: flex;
+   justify-content: space-between;
+   gap: 80px;
+   margin-right: 10px;
+   margin-top: 20px;
+}
+
+.footer-paragraph{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+.employee-card{
+    background-color:white;
+    color:black;
+   width: 20vw;
+   height: 30vh;
+   margin:10px;
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   justify-content: center;
+   padding-left: 20px;
+  
+}
+
+#edit-btn{
+    cursor: pointer;
+    width: 50px;
+}
+
+#delete-btn{
+    cursor: pointer;
+    width: 70px;
+}
+
+.main-container{
+    display: flex;
+}
+
+.filter{
+   display: none;
+}
+
+.hide{
+    display: flex;
+   flex-direction: column;
+   width: 20vw;
+   height: 50vh;
+}
+
+.filter-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-top: 5%;
+    gap: 20px;
+}
+
+.filter-button-container{
+    display: flex;
+    gap: 5%;
+    margin-top: 25px;
+}
+
+
+
