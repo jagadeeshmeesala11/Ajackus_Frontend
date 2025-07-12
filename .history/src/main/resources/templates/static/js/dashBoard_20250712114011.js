@@ -40,7 +40,7 @@ showComponent.addEventListener('change', () => {
 })
 
 applyBtn.addEventListener('click', () => {
-  const filteredEmployees = currentEmployees.filter(employee => employee.firstName.toLowerCase() === firstNameInput.value.toLowerCase() && employee.department.toLowerCase() === departmentInput.value.toLowerCase() && employee.role.toLowerCase() === roleInput.value.toLowerCase());
+  const filteredEmployees = currentEmployees.filter(employee => employee.firstName === firstNameInput.value && employee.department === departmentInput.value && employee.role === roleInput.value);
   renderDashboard(filteredEmployees);
 });
 
